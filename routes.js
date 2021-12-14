@@ -14,4 +14,8 @@ module.exports = function(app) {
     // Menampilkan data berdasarkan id
     app.route('/tampil/:id')
         .get(jsonku.tampilberdasarkanid);
+
+    // Tambah data pake method post
+    app.route('/tambah')
+        .post(jsonku.tambahdata);
 }
