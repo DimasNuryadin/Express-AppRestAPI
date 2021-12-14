@@ -18,4 +18,8 @@ module.exports = function(app) {
     // Tambah data pake method post
     app.route('/tambah')
         .post(jsonku.tambahdata);
+
+    // Ubah data pake method put
+    app.route('/ubah')
+        .put(jsonku.ubahData);
 }
