@@ -1,6 +1,7 @@
 // Untuk code dijalankan lebih ketat
 'use strict';
 
+// Apakah data benar terupdate, bertambah, terhapus
 exports.ok = function (values, res) {
     var data = {
         'status': 200,
