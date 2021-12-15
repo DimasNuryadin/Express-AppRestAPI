@@ -21,5 +21,13 @@ module.exports = function(app) {
 
     // Ubah data pake method put
     app.route('/ubah')
-        .put(jsonku.ubahData);
+        .post(jsonku.ubahData);
+
+    // Hapus data pake method delete
+    app.route('/hapus')
+        .post(jsonku.hapusData);
+
+    // Route Nested #11
+    app.route('/tampilmatakuliah')
+        .get(jsonku.tampilgroupmatakuliah);
 }
