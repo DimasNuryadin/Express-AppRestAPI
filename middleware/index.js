@@ -5,5 +5,7 @@ var router = express.Router();
 
 // Daftarkan menu registrasi
 router.post('/api/v1/register', auth.registrasi);
+// Daftarkan menu Login
+router.post('/api/v1/login', auth.login);
 
 module.exports = router;
