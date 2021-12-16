@@ -104,3 +104,9 @@ exports.login = function (req, res) {
         }
     });
 };
+
+
+// Halaman buat test Role   # 16
+exports.halamanRahasia = function(req, res) {
+    response.ok("Halaman ini hanya untuk user dengan role = 2!");
+}
