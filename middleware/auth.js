@@ -1,3 +1,5 @@
+
+// Kuliah #14
 // Akan buat router Registrasi, Login / beberapa url yang akan di cek apakah dia public atau alamat url yang harus pakai token
 
 var connection = require('../koneksi');
@@ -19,7 +21,7 @@ exports.registrasi = function(req, res) {   // Function untuk mengambil data dar
     }
 
     // Apakah emailnya sudah terdaftar apa belum
-    var query = "SELECT email FROM ?? WHERE??"; // Panggil table
+    var query = "SELECT email FROM ?? WHERE??=?"; // Panggil table
     var table = ["user", "email", post.email];  // Emailnya terdaftar?
 
     query = mysql.format(query, table); // Akan menjalankan query panggil table
@@ -40,9 +42,8 @@ exports.registrasi = function(req, res) {   // Function untuk mengambil data dar
                     }
                 });
             } else {    // Jika tidak maka tampilkan Emal sudah terdaftar
-                response.ok("Email sudah terdaftar");
+                response.ok("Email sudah terdaftar", res);
             }
         }
     })
-
 }
