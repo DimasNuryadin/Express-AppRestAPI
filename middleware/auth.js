@@ -107,6 +107,27 @@ exports.login = function (req, res) {
 
 
 // Halaman buat test Role   # 16
-exports.halamanRahasia = function(req, res) {
-    response.ok("Halaman ini hanya untuk user dengan role = 2!");
+exports.halamanUser1 = function(req, res) {
+    response.ok("Halaman ini hanya untuk user dengan role = 1", res);
 }
+
+exports.halamanUser2 = function(req, res) {
+    response.ok("Halaman ini hanya untuk user dengan role = 2!", res);
+}
+
+exports.halamanAdmin = function(req, res) {
+    response.ok("Halaman ini hanya untuk Admin dengan role = 3!", res);
+}
+
+
+// exports.halamanUser1 = function(req, res) {
+//     response.ok("Halaman ini hanya untuk user dengan role = 1!", res);
+// }
+
+// exports.halamanUser2 = function(req, res) {
+//     response.ok("Halaman ini hanya untuk user dengan role = 2!", res);
+// }
+
+// exports.halamanAdmin = function(req, res) {
+//     response.ok("Halaman ini hanya untuk Admin dengan role = 3", res);
+// }
