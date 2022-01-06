@@ -25,7 +25,7 @@ module.exports = function(app) {
 
     // Hapus data pake method delete
     app.route('/hapus')
-        .post(jsonku.hapusData);
+        .delete(jsonku.hapusData);
 
     // Route Nested #11
     app.route('/tampilmatakuliah')
